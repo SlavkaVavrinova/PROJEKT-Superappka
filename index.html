@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Superappka (standardní varianta)</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superappka (standardní varianta)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="obal">
+      <!-- menu -->
+      <ul class="navigation">
+        <li class="navigation__title">SUPER APPKA</li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Úžasný design</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Boží funkce</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Zdarma ke stažení</a>
+        </li>
+      </ul>
 
-	<div class="obal">
+      <!-- hero sekce / banner -->
+      <section class="hero">
+        <h1 class="hero__title">Super Appka</h1>
 
-		<!-- menu -->
-		<ul>
-			<li>SUPER APPKA</li>
-			<li><a href="#">Úžasný design</a></li>
-			<li><a href="#">Boží funkce</a></li>
-			<li><a href="#">Zdarma ke stažení</a></li>
-		</ul>
+        <p class="hero__text">
+          Úžasná mobilní aplikace,
+          <br />
+          která Ti změní život.
+        </p>
 
+        <a class="hero__link hero__link--primary" href="#">Stáhnout zdarma</a>
+        <a class="hero__link hero__link--secondary" href="#">Více informací</a>
 
-		<!-- hero sekce / banner -->
-		<h1>Super Appka</h1>
+        <img class="hero__img" src="images/telefon.png" alt="Telefon" />
+      </section>
 
-		<p>
-			Úžasná mobilní aplikace,
-			<br> která Ti změní život.
-		</p>
+      <!-- obsah se 3 sloupci -->
+      <section class="content">
+        <div>
+          <img class="content__img" src="images/letadlo.svg" alt="Letadlo" />
+          <h2 class="content__title">Cestuj po světě</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+            perferendis maxime quisquam cum ut nobis corporis ipsa eveniet
+            deleniti.
+          </p>
+        </div>
 
-		<a href="#">Stáhnout zdarma</a>
-		<a href="#">Více informací</a>
+        <div>
+          <img class="content__img" src="images/bubliny.svg" alt="Bubliny" />
+          <h2 class="content__title">Chatuj s přáteli</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+            perferendis maxime quisquam cum ut nobis corporis ipsa eveniet
+            deleniti.
+          </p>
+        </div>
 
-		<img src="images/telefon.png" alt="Telefon">
+        <div>
+          <img class="content__img" src="images/mapa.svg" alt="Mapa" />
+          <h2 class="content__title">Zažij dobrodružství</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+            perferendis maxime quisquam cum ut nobis corporis ipsa eveniet
+            deleniti.
+          </p>
+        </div>
+      </section>
 
-
-
-
-		<!-- obsah se 3 sloupci -->
-		<img src="images/letadlo.svg" alt="Letadlo">
-		<h2>Cestuj po světě</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
-
-		<img src="images/bubliny.svg" alt="Bubliny">
-		<h2>Chatuj s přáteli</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
-
-		<img src="images/mapa.svg" alt="Mapa">
-		<h2>Zažij dobrodružství</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
-
-
-		<!-- patička -->
-		<p>&copy;2020, Czechitas</p>
-
-
-	</div><!-- konec obalu -->
-
-</body>
+      <!-- patička -->
+      <footer class="footer">
+        <p class="footer__text">&copy;2020, Czechitas</p>
+      </footer>
+    </div>
+    <!-- konec obalu -->
+  </body>
 </html>
